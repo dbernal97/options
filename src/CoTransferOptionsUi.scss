@@ -1,0 +1,161 @@
+@import "node_modules/@bbva-web-components/bbva-foundations-sass/main";
+
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+:host([hidden]), [hidden] {
+  display: none !important;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Variables
+
+$gray-color: #666666;
+$card-gray-color: #F4F4F4;
+
+.header{
+  #header-title{
+    background-color: #072146;
+  }
+
+  section{
+    text-align: center;
+  }
+}
+
+
+.main-container{
+
+  padding: 2px;
+
+  .transfer-option-list{
+
+    #num-screen{
+      color: $gray-color;
+      font-style: italic;
+      font-weight: bold;
+    }
+  
+    .card-option{
+      background-color: $card-gray-color;
+      padding: 5px;
+      margin: 10px 5px 10px 5px;
+      border-radius: 5px;
+      box-shadow: 0 0.5px 3px 0.2px rgb(197, 197, 197);
+
+      .title-option{
+        color: #121212;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 32px;
+      }
+    }
+  
+    #continue-btn{
+      margin-top: 20px;
+    }
+  }
+
+  .transfer-summary{
+    margin-top: 10px;
+    background-color: $card-gray-color;
+    padding: 5px;
+
+    .title-summary{
+      color: #121212;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+    
+    .amount-change{
+      color: #121212;
+      font-size: 25px;
+      font-weight: 300;
+      letter-spacing: 0;
+      line-height: 24px;
+    }
+
+    .values-table{
+      margin-top: 10px;
+      width: 100%;
+      tr{
+        td{
+          text-align: right;
+        }
+        td:first-child{
+          text-align: left;
+        }
+      }
+    }
+
+    .text-lgh, .text-lgh-big{
+      color: #666666;
+    }
+
+    .text-lgh{
+      font-size: 12px;
+    }
+  }
+  #comision{
+    background-color: #D9EFE0;
+    height: 70px;
+    margin-top: 20px;
+    padding-top: 5px;
+
+    table{
+      padding: 5x;
+      width: 100%;
+      
+      tr{
+        td{
+          color: #388D4F;
+          font-style: italic;
+          text-align: right;
+        }
+        td:first-child{
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  .main-container{
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+  
+    .transfer-option-list{
+      width: 52%;
+
+      #num-screen{
+        color: $gray-color;
+      }
+    
+      .card-option{
+        margin: 15px 0;
+      }
+    
+      button{
+        margin-top: 20px;
+      }
+    }
+
+    .transfer-summary{
+      margin-top: 70px;
+      width: 350px;
+      margin-left: 80px; 
+      height: auto;
+    }
+  }
+}

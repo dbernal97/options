@@ -1,0 +1,29 @@
+{
+  "name": "@transfiya/co-transfer-options-ui",
+  "version": "1.0.0-rc.1",
+  "description": "",
+  "keywords": [],
+  "main": "index.js",
+  "files": [
+    "/src/",
+    "/locales/",
+    "*.js",
+    "!**/*.scss"
+  ],
+  "dependencies": {
+    "@bbva-web-components/bbva-core-lit-helpers": "^1.0.4",
+    "@bbva-web-components/bbva-foundations-styles": "^2.3.5",
+    "@bbva-web-components/bbva-web-button-default": "^1.5.0",
+    "@bbva-web-components/bbva-web-button-multistep-back": "^1.2.0",
+    "@bbva-web-components/bbva-web-divider": "^1.0.4",
+    "@bbva-web-components/bbva-web-form-radio-button": "^1.2.4",
+    "@bbva-web-components/bbva-web-header-multistep": "^1.1.0",
+    "@bbva-web-components/bbva-web-link": "^1.6.0",
+    "@bbva-web-components/bbva-web-progress-multistep-bar": "^1.0.9",
+    "@bbva-web-components/bbva-web-template-modal": "^1.3.8",
+    "lit-element": "^2.0.0"
+  },
+  "devDependencies": {
+    "@cells/cells-component-core": "^3.1.0"
+  }
+}
